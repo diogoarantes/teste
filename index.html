@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>CaçaAoTesouro</title>
+        <style>
+            @keyframes move {
+                0% {
+                    left: 0%;
+                }
+                50% {
+                    left: 50%;
+                }
+                100% {
+                    left: 0%;
+                }
+            }
+
+            h1 {
+                position: relative;
+                animation-name: move;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+            }
+
+            #body {
+                background-image: url("img/jack-sparrow2.jpg")
+                background-size: 1200px 700px;
+                background-repeat: no-repeat;
+                background-position: top;
+                background-attachment: fixed;
+            }
+        </style>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+    <body background="img/jack-sparrow2.jpg">
+        <div>
+            <h1 style="font-size: 500%"><a href="pagina2.html">Bem vindo a caça ao tesouro.</a></h1>
+
+        </div>  
+    </body>
+</html>
