@@ -7,16 +7,42 @@
 			.grande {
 				background-color: orange;
 				color: white; 
+				border: 5px solid white;
 				text-align: center;
 				width: 100%;
 				text-decoration: solid;
 				font-size: 100px;
 				position: absolute;
 			}
-		
+			#img {
+                background-image: url("img/tesouro.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                border: 5px solid black;
+                max-width: 100%;
+                height: auto;
+                background-size: cover;
+            } 
+            #img2 {
+                background-image: url("img/d.jpg");
+                position: absolute;
+                bottom: 8px;
+                right: 16px;
+                font-size: 18px;
+            } 
 		</style>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	</head>
-	<body background="img/tesouro.jpg">
-		<h1><a href="pagina3.html"><button type="button" class="grande">Começar</button></a></h1>	
+	
+	<body id="img" background="img/tesouro.jpg">
+		<div>
+			<form>
+				<h1><a href="pagina3.html"><button type="button" class="grande">Começar</button></a></h1>	
+			</form>
+			<img id="img2" src="img/d.jpg">
+		</div>
 	</body>
 </html>

@@ -2,9 +2,44 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>Caça Ao Tesouro</title>
+		<title>CaçaAoTesouro</title>	
+		<style>
+			h1 {
+                
+        	    background-color:#FFFFFF;
+            	border:1px #000000 solid;
+            	opacity: 0.65;
+            	-moz-opacity: 0.65;
+            	filter: alpha(opacity=65);
+            	color: green;
+            }
+
+            #body {
+                background-image: url("img/mapa.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                border: 5px solid black;
+                max-width: 100%;
+                height: auto;
+                background-size: cover;
+				position: absolute;
+            }
+
+            .grande {
+				background-color: orange;
+				color: white; 
+				border: 5px solid white;
+				text-align: center;
+				width: 40%;
+				text-decoration: solid;
+				font-size: 30px;
+				position: absolute;
+			}
+		</style>
 	</head>
-	<body>
-		<p>Você conseguiu!!!!</p>
+	<body id="img" background="img/mapa.jpg">
+		<h1>Você encontra um mapa do tesouro escondido na garagem de sua casa. Ao perguntar ao seu pai, ele responde que o mapa era uma lembrança de seu tataravô, provavelmente alguma loucura de um velho gagá.</h1>
+		<a href="pagina4.html"><button type="button" class="grande">Começar a caça ao tesouro.</button></a>
 	</body>
 </html>
