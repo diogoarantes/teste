@@ -52,8 +52,17 @@
 	<body id="img" background="img/mat.gif">
 		<h1>Questão 1.</h1>
 		<h2>4x + 3 = 7</h2>
-		<input type="text" max="1" min="1"><br />
-		<a href="pagina8.html"><button type="button" class="grande">Enviar.</button>
-
+		<input type="text" id="campo"><br />
+		<a href="pagina2.html"><button type="button" class="grande">Enviar.</button>
+		<script>
+			var campo = document.getElementById('campo');
+			if(campo.value === 1) {
+				alert('resposta certa');
+			}
+			else{
+				alert('resposta errada');
+			}
+						
+		</script>
 	</body>
 </html>

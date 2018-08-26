@@ -2,55 +2,30 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>CaçaAoTesouro</title>	
-		<style>
-			h1 {
-                
-        	    background-color:#FFFFFF;
-            	border:1px #000000 solid;
-            	opacity: 0.65;
-            	-moz-opacity: 0.65;
-            	filter: alpha(opacity=65);
-            	color: green;
-            }
-
-            #body {
-                background-image: url("img/anitta.gif");
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: top;
-                max-width: 100%;
-                height: auto;
-            }
-
-            .grande {
-				background-color: orange;
-				color: white; 
-				border: 5px solid white;
-				text-align: center;
-				width: 40%;
-				text-decoration: solid;
-				font-size: 30px;
-				position: absolute;
-			}
-			.outro {
-				background-color: orange;
-				color: white; 
-				border: 5px solid white;
-				text-align: center;
-				width: 40%;
-				height: 100px;
-				top: 240px;
-				text-decoration: solid;
-				font-size: 30px;
-				position: absolute;
-			}
-		</style>
+		<title> frgrgweg</title>
 	</head>
-	<body id="img" background="img/anitta.gif">
-		<h1>A primeira instrução do mapa indica que você deve comprar um ingresso para ir ao show da Anitta.</h1>
-		<a href="pagina6.html"><button type="button" class="grande">Você compra o ingresso gastando toda sua mesada e vai ao show.</button></a><br />
-		<a href="pagina5.html"><button type="button" class="outro">Você prefere ignorar e não ir.</button></a>
+	<body>
+		<form action="pagina2.html" id="formulario">
+			<input type="number" id="campo"><br />
+			<button type="submit">Enviar</button>
+		</form>			
+		<script>
+			var form = document.getElementById('formulario');
+			var campo = document.getElementById('campo');
 
+			form.addEventListener('submit', function(e) {
+				//alerta o valor do campo
+				alert('verificando se a resposta é:' + campo.value);
+
+			if(campo.value == 1) {
+				alert('Boa! Resposta certa!');
+			} else{
+				alert('Resposta errada, tente novamente');
+				//inpede o envio do form 
+				e.preventDefault();
+			}
+		});
+						
+		</script>
 	</body>
 </html>
