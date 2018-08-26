@@ -49,19 +49,29 @@
 			}
 		</style>
 	</head>
-	<body id="img" background="img/mat.gif">
+	<body id="img" background="img/mat.gif" >
 		<h1>Questão 1.</h1>
 		<h2>4x + 3 = 7</h2>
-		<input type="text" id="campo"><br />
-		<a href="pagina2.html"><button type="button" class="grande">Enviar.</button>
+		<form action="pagina8.html" id="formulario">
+			<input type="number" id="campo"><br />
+			<button type="submit">Enviar</button>
+		</form>			
 		<script>
+			var form = document.getElementById('formulario');
 			var campo = document.getElementById('campo');
-			if(campo.value === 1) {
-				alert('resposta certa');
+
+			form.addEventListener('submit', function(e) {
+				//alerta o valor do campo
+				alert('verificando se a resposta é:' + campo.value);
+
+			if(campo.value == '1') {
+				alert('Boa! Resposta certa!');
+			} else{
+				alert('Resposta errada, tente novamente');
+				//inpede o envio do form 
+				e.preventDefault();
 			}
-			else{
-				alert('resposta errada');
-			}
+		});
 						
 		</script>
 	</body>
